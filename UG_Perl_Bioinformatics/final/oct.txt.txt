@@ -1,0 +1,12 @@
+Interpretuje WYRAZENIE jako ³añcuch ósemkowy i zwraca odpowiadaj¹c¹
+               wartoœæ. (Jeœli WYRA¯ENIE zaczyna siê od 0x, jest interpretowane
+               jako ³añcuch szesnastkowy.) Nastêpuj¹cy kod obs³uguje liczby
+               dziesiêtne, ósemkowe i szesnastkowe w standardowej notacji
+               perla lub C:
+ $val = oct($val) if $val =~ /^0/;
+
+               Jeœli WYRA¯ENIE jest pominiête, u¿ywa $_. Funkcja ta jest czêsto
+               u¿ywana gdy ³añcuch w rodzaju "644" musi byæ np.
+               przekonwertowany na prawa pliku. (Chocia¿ perl automatycznie
+               konwertuje ³añcuchy na liczby, zgodnie z potrzebami, to
+               automatyczna konwersja zak³ada podstawê 10.)
